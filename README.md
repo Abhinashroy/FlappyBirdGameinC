@@ -1,30 +1,45 @@
-<title>Flappy Bird Game</title>
-This project is a simple implementation of the classic Flappy Bird game in C, designed to run on Windows platforms. Below are the overview and execution instructions for the game.
+# Flappy Bird Game
 
-OVERVIEW:
-The game is implemented using basic ASCII art to represent the game elements on the console. The player controls a bird that must navigate through gaps between walls by jumping. The walls move horizontally towards the bird, and the player must avoid collision with the walls or the top and bottom edges of the screen. The game ends when the bird collides with any obstacle.
+## Overview
+This project is a simple implementation of the classic Flappy Bird game in C, designed to run on Windows platforms. The game uses basic ASCII art to represent elements on the console. The player controls a bird that must navigate through gaps between walls, avoiding collisions with obstacles and the edges of the screen.
 
-Execution Instructions:
-Compile the Code: Compile the provided source code using a C compiler compatible with Windows systems. You can use GCC or any other compiler that supports Windows.
+## Features
+- **ASCII Art**: Visual representation of the game elements.
+- **Random Wall Generation**: Walls are generated with gaps for navigation.
+- **Sound Effects**: Collision events trigger sound effects using the Beep function.
+- **Game Over Screen**: Displays a message when the bird collides with an obstacle.
 
+## Execution Instructions
+
+### 1. Compile the Code
+To compile the provided source code, use a C compiler compatible with Windows systems, such as GCC. Open your command prompt and run:
+
+```bash
 gcc BirdGame.c -o BirdGame
-Run the Game: Execute the compiled binary to start the game.
+```
 
+### 2. Run the Game
+After compiling, execute the compiled binary to start the game:
+
+```bash
 BirdGame.exe
-Game Controls:
+```
 
-Press the SPACE key to make the bird jump.
-Press q to quit the game.
-Gameplay:
+## Game Controls
+- **Jump**: Press the SPACE key to make the bird jump.
+- **Quit**: Press `q` to exit the game.
 
-The bird starts in the middle of the screen.
-Use the jump action to navigate the bird through the gaps between walls.
-Avoid collision with the walls and the top/bottom edges of the screen.
-The game ends when the bird collides with any obstacle, and a "Game Over" message is displayed.
+## Gameplay
+- The bird starts in the middle of the screen.
+- Use the jump action to navigate the bird through gaps between walls.
+- Avoid collisions with walls and the top/bottom edges of the screen.
+- The game ends when the bird collides with any obstacle, displaying a "Game Over" message.
 
-IMPORTANT:
-The game utilizes Windows-specific functions for input handling and console manipulation ('conio.h' and Windows API).
-Walls are randomly generated with gaps for the player to navigate through.
-Sound effects are included using the Beep function for collision events
-Play Flappy Bird on your Windows console!
-Flappy Bird Experimented has extra obstacles to play with.
+## Important Notes
+- The game uses Windows-specific functions for input handling and console manipulation (e.g., `conio.h` and Windows API).
+- Make sure to run the game in a command line environment that supports these functions.
+
+## Additional Features
+- **Flappy Bird Experimented**: An extended version of the game featuring extra obstacles for added challenge.
+
+Enjoy playing Flappy Bird on your Windows console!
